@@ -13,182 +13,11 @@
     <link rel="stylesheet" type="text/css" href="css/menjadora.css" />
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript">
-        var acc = 0;
-        var op = "";
-        $(function() {
-            num = $("#num");
-            var memory = $("#memo");
-            num.on('click', function() {
-                limpiar();
-            });
 
-            $("#calcular").on('click', function() {
-                calcular();
-            })
-
-            $("#mas").on('click', function() {
-                acc = num.val();
-                op = '+';
-                limpiar();
-                num.focus();
-            });
-
-            $("#menos").on('click', function() {
-                acc = num.val();
-                op = '-';
-                limpiar();
-                num.focus();
-            });
-
-            $("#por").on('click', function() {
-                acc = num.val();
-                op = '*';
-                limpiar();
-                num.focus();
-            });
-            $("#div").on('click', function() {
-                acc = num.val();
-                op = '/';
-                limpiar();
-                num.focus();
-            });
-            $("#xy").on('click', function() {
-                acc = num.val();
-                op = 'xy';
-                limpiar();
-                num.focus();
-            });
-            $("#qua").on('click', function() {
-                acc = num.val();
-                op = 'qua';
-                calcular();
-                num.focus();
-            });
-            $("#inv").on('click', function() {
-                acc = num.val();
-                op = 'inv';
-                calcular();
-                num.focus();
-            });
-            $("#sqr").on('click', function() {
-                acc = num.val();
-                op = 'sqr';
-                calcular();
-                num.focus();
-            });
-            $("#Ent").on('click', function() {
-                acc = num.val();
-                op = 'Ent';
-                calcular();
-                num.focus();
-            });
-            $("#2n").on('click', function() {
-                acc = num.val();
-                op = '2n';
-                calcular();
-                num.focus();
-            });
-            $("#nf").on('click', function() {
-                acc = num.val();
-                op = 'nf';
-                calcular();
-                num.focus();
-            });
-            $("#sum").on('click', function() {
-                var string = num.val();
-                acc = string.split(",");
-                op = 'sum';
-                calcular();
-                num.focus();
-            });
-            $("#prod").on('click', function() {
-                var string = num.val();
-                acc = string.split(",");
-                op = 'prod';
-                calcular();
-                num.focus();
-            });
-            $("#toMem").on('click', function() {
-                memory.val(num.val());
-                num.focus();
-            });
-            $("#fromMem").on('click', function() {
-                num.val(memory.val());
-                num.focus();
-            });
-
-
-        });
-
-        function limpiar() {
-            num.val("");
-        }
-
-        function calcular() {
-            if (op === "+") {
-                num.val(+acc + +num.val());
-            }
-            if (op === "-") {
-                num.val(+acc - +num.val());
-            }
-            if (op === "*") {
-                num.val(+acc * +num.val());
-            }
-            if (op === "/") {
-                num.val(+acc / +num.val());
-            }
-            if (op === "xy") {
-                num.val(Math.pow(+acc, +num.val()));
-            }
-            if (op === "qua") {
-                num.val(Math.pow(+acc, 2));
-            }
-            if (op === "inv") {
-                num.val(1 / +acc);
-            }
-            if (op === "sqr") {
-                num.val(Math.pow(+acc, 0.5));
-            }
-            if (op === "Ent") {
-                if (+acc >= 0) {
-                    num.val(Math.floor(+acc));
-                } else {
-                    num.val(Math.ceil(+acc));
-                }
-            }
-            if (op === "2n") {
-                num.val(Math.pow(2, +acc));
-            }
-            if (op === "nf") {
-                var res = 1;
-                for (i = num.val(); i > 0; i--) {
-                    res *= i;
-                }
-                num.val(res);
-            }
-            if (op === "sum") {
-                var res = 0;
-                for (i = 0; i < acc.length; i++) {
-                    res += +acc[i];
-                }
-                num.val(res);
-
-            }
-            if (op === "prod") {
-                var res = 1;
-                for (i = 0; i < acc.length; i++) {
-                    res *= +acc[i];
-                }
-                num.val(res);
-
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <nav class="navbar navbar-inverse ">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -197,53 +26,34 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span> 
                     </button>
-                    <a class="navbar-brand" href="https://miriadax.net/web/html5mooc/inicio">MOOC</a>
+                    <a class="navbar-brand" href="http://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif">CAN PIXA</a>
                 </div>
                 <div class="collapse navbar-collapse" id="miMenu">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="10-index.html">INICIO</a></li>
-                        <li><a href="10-ejercicio_puzzle.html">PUZZLE</a></li>
-                        <li><a href="Calculadora.html">Calculadora</a></li>
-                        <li><a href="#">Opción 4</a></li>
-                        <li><a href="#">Opción 5</a></li>
+                        <li class="active"><a href="http://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif">SEGURETAT</a></li>
+                        <li><a href="Menjadora.html">MENJADORA</a></li>
+                        <li><a href="http://www.animatedimages.org/data/media/695/animated-under-construction-image-0035.gif">ALTRES</a></li>
+                        <li><a href="#">Opció 4</a></li>
+                        <li><a href="#">Opció 5</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <h1>Buenos días, bienvenido a la calculadora de Josep Pablo</h1>
-        <div id="container">
+        <h1>Menjadora automàtica</h1>
+        <div class="container-fluid" id="container">
 
-            <div id="calculator">
+            <div id="manual">
 
 
-                Calculadora:
+                Control manual: <br><br> Posició (20 - 160)
                 <p contenteditable="true" id="cap">
-                    <input type="text" size="12" id="num" maxlength="14">
+                    <input type="text" size="12" id="num" maxlength="3">
                 </p>
-                <p contenteditable="true" id="mem">Memoria
-                    <input type="text" size="12" id="memo" disabled>
-                </p>
-                <p id="dosop">
-                    <button id="mas">+</button>
-                    <button id="menos">-</button>
-                    <button id="por">*</button>
-                    <button id="div">/</button>
-                    <button id="xy">x^y</button>
-                    <button id="calcular">=</button>
-                    <button id="toMem">ToM</button>
-                    <button id="fromMem">FrM</button>
-                </p>
-                <p id="unop">
-                    <button id="qua">x^2</button>
-                    <button id="inv">1/x</button>
-                    <button id="sqr">√x</button>
-                    <button id="Ent">Entero</button>
-                    <button id="2n">2^n</button>
-                    <button id="nf">n!</button>
-                </p>
-                <p id="csv">
-                    <button id="sum">∑n</button>
-                    <button id="prod">Π</button>
+
+                <p id="movs">
+                    <button class="butonet" id="mou">MOU</button>
+                    <button class="butonet" id="baixa">BAIXA</button>
+                    <button class="butonet" id="puja">PUJA</button>
                 </p>
             </div>
         </div>

@@ -22,6 +22,7 @@ h1 {
     background: #ffeebb;
     text-align: center;
     font-size: 4vw;
+    font-weight: bold;
 }
 
 p {
@@ -31,7 +32,7 @@ p {
 
 button {
     min-width: 30px;
-    min-height: 30px;
+    min-height: 10px;
 }
 
 #container {
@@ -43,18 +44,20 @@ button {
     justify-content: center
 }
 
-#calculator {
+#manual {
     border-radius: 24px 24px 24px 24px;
     border: 1px solid black;
     background: linear-gradient(to bottom, rgba(245, 214, 177, 1) 0%, rgba(240, 163, 74, 1) 48%, rgba(245, 214, 177, 1) 100%);
     margin: 0px;
     padding: 10px;
     width: 145px;
+    font-weight: bold;
 }
 
 #num {
     background-color: #E9E9E9;
     font-weight: bold;
+    text-align: center;
     border-radius: 24px 24px 24px 24px;
     width: 123px;
     padding: 2px;
@@ -70,4 +73,14 @@ button {
 
 #cap {
     width: 150px;
+}
+
+.butonet {
+    font-weight: bold;
+    border-radius: 24px 24px 24px 24px;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, rgba(245, 214, 177, 1) 0%, rgba(100, 0, 0, 0.5) 48%, rgba(245, 214, 177, 1) 100%);
+    margin: 0px;
+    padding: 10px;
+    width: 145px;
 }
