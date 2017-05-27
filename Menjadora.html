@@ -14,6 +14,42 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
+
+    <script type="text/javascript">
+        var num = $("#num");
+
+        $(function() {
+
+            num = $("#num");
+
+            num.on('click', function() {
+                limpiar();
+
+            });
+
+            $("#mou").on('click', function() {
+                if ((160 < num.val()) || 20 > num.val()) {
+                    alert("Valor entre 20 i 160");
+                } else {
+                    var URL = "http://192.168.1.80/POS=" + num.val();
+
+                }
+                limpiar();
+
+            })
+
+            $("#baixa").on('click', function() {
+                num.val(num.val() + 1);
+
+            })
+
+        });
+
+        function limpiar() {
+            num.val("");
+
+        }
+    </script>
 </head>
 
 <body>
