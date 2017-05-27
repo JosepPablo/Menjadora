@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Menjadora</title>
+    <title>Menjadora Control</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
@@ -32,6 +32,7 @@
                     alert("Valor entre 20 i 160");
                 } else {
                     var URL = "http://192.168.1.80/POS=" + num.val();
+                    $.get(URL);
 
                 }
                 limpiar();
