@@ -7,8 +7,18 @@ var menjadoraController = require('../controllers/menjadora_controller');
 router.get('/', function(req, res, next) {
     res.render('Menjadora', { title: 'Menjadora' });
 });
+/* GET Menjadora page. */
+router.get('/Menjadora', function(req, res, next) {
+    res.render('Menjadora', { title: 'Menjadora' });
+});
 
-//router.get('/baixa', menjadoraController.mou);
+/* GET moumanual page. */
+//router.get('/moumanual', function(req, res, next) {
+//    res.render('moumanual', { title: 'Moumanual' });
+//});
+router.get('/moumanual/:POS(\\d+)', menjadoraController.moumanual);
+//router.get('/moumanual/:POS(\\d+)','192.168.1.80/POS=60');
+
 
 
 module.exports = router;

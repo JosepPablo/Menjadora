@@ -1,5 +1,6 @@
-// GET /menjadora/mou
+// GET /menjadora/moumanual
 
-//exports.mou = function(req, res) {
-//  res.render('baixa', { POS = '60' });
-//}
+exports.moumanual = function(req, res) {
+    res.render('moumanual', { POS: req.params.POS });
+    // res.render('moumanual', { title: 'Moumanual' });
+};
